@@ -41,7 +41,7 @@ export default function Home() {
         {images.map((item) => {
           return (
             <FincaItem
-              key={item.src}
+              key={item.src.toString()}
               src={item.src}
               sale={item.sale}
               price={item.price}
@@ -60,7 +60,7 @@ export default function Home() {
         {pillows.map((item) => {
           return (
             <FincaItem
-              key={item.src}
+              key={item.src.toString()}
               src={item.src}
               sale={item.sale}
               price={item.price}

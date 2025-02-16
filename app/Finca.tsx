@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import { Noto_Serif_Display } from "next/font/google";
 import { CSSProperties } from "react";
@@ -8,11 +8,11 @@ const noto = Noto_Serif_Display({
 });
 
 type FincaProps = {
-  src: string;
+  src: string | StaticImageData;
   title: string;
   subTitle?: string;
-  style: CSSProperties;
-  textStyle: CSSProperties;
+  style?: CSSProperties;
+  textStyle?: CSSProperties;
 };
 
 export default function Finca({
